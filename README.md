@@ -1,5 +1,9 @@
 ## React-Album : Unsplash Image API를 활용한 이미지 검색 사이트 만들기
 
+## 앨범 App: Unsplash Image API를 활용한 이미지 검색 사이트 만들기
+
+> > > > > > > 6f5e20eca76d474b6c0da4f02074e99273a6831a
+
 ### 개발환경
 
 1. 프로젝트 환경설정(Vite를 활용한 React 프로젝트) : `npm install vite@latest` <br />
