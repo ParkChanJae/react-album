@@ -1,4 +1,5 @@
 import styles from './CommonHeader.module.scss';
+
 function CommonHeader() {
     return (
         <header className={styles.header}>

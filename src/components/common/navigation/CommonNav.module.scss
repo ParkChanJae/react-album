@@ -20,5 +20,18 @@
         text-decoration: none;
         color: $color-white-700;
         font-weight: 500;
+
+        &.incative {
+            color: $color-white-700;
+            border-bottom: none;
+        }
+        &.active {
+            color: $color-black-900;
+            border-bottom: 2px solid $color-white-700;
+        }
+        &:hover {
+            color: $color-black-900;
+            font-weight: 600;
+        }
     }
 }
