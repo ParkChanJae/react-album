@@ -2,15 +2,15 @@ import CommonHeader from '@/components/common/header/CommonHeader';
 import CommonSearchBar from '@/components/common/searchBar/CommonSearchBar';
 import CommonNav from '@/components/common/navigation/CommonNav';
 import CommonFooter from '@/components/common/footer/CommonFooter';
-
+import DetailDialog from '@/components/common/dialog/DetailDialog';
+import Loading from './components/Loading';
+import Card from './components/Card';
 //CSS
 import styles from './styles/index.module.scss';
 import { useMemo, useState } from 'react';
 import { CardDTO } from './types/card';
-import Card from './components/Card';
 import { useRecoilValueLoadable } from 'recoil';
 import { imageData } from '@/recoil/selectors/imageSelector';
-import DetailDialog from '@/components/common/dialog/DetailDialog';
 
 function index() {
     // const imgSelector = useRecoilValue(imageData);
@@ -25,7 +25,7 @@ function index() {
             });
             return result;
         } else {
-            return <div>loading...</div>;
+            return <Loading />;
         }
     }, [imgSelector]);
 

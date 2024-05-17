@@ -3,6 +3,7 @@ import { RecoilRoot } from 'recoil';
 
 //페이지 컴포넌트
 import MainPage from '@/pages/index/index';
+import BookMarkPage from '@/pages/bookmark/index';
 
 function App() {
     return (
@@ -10,7 +11,8 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route index path="/" element={<MainPage />}></Route>
-                    <Route path="/:id" element={<MainPage />}></Route>
+                    <Route path="/search/:id" element={<MainPage />}></Route>
+                    <Route path="/bookmark" element={<BookMarkPage />} />
                 </Routes>
             </BrowserRouter>
         </RecoilRoot>
