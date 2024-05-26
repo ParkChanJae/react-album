@@ -20,6 +20,7 @@ function index() {
         <div className={styles.page}>
             {/* 공통 헤더 UI  */}
             <CommonHeader />
+            <h1 style={{ color: 'gray', marginTop: '50px' }}>Bookmark</h1>
             <main className={styles.page__contents}>
                 {data.length === 0 ? (
                     <div className={styles.page__contents__noData}>조회 가능한 데이터가 없습니다.</div>
